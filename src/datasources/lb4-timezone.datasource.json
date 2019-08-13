@@ -1,0 +1,10 @@
+{
+  "name": "Lb4Timezone",
+  "connector": "mysql",
+  "url": "mysql://lb4timezone:lb4timezone@db4free.net/lb4timezone",
+  "host": "db4free.net",
+  "port": 3306,
+  "user": "lb4timezone",
+  "password": "lb4timezone",
+  "database": "lb4timezone"
+}
