@@ -31,14 +31,16 @@ export class UserController {
     @param.query.string('name') name: string,
   ): Promise<Object> {
 
-    const dateTimeNowTz = moment(new Date()).format('YYYY-MM-DDTHH:mm:ss.SSZ');
+    const dateTimeNowTz = new Date();
+    // const dateTimeNowTz = moment(new Date()).format('YYYY-MM-DDTHH:mm:ss.SSZ');
     // const dateTimeNowTz = new Date().toLocaleDateString()
     //                       + ' '
     //                       + new Date().toLocaleTimeString();
 
     const createdUser = await this.UserRepository.create({
       name: name,
-      dateAdded: moment(new Date()).format('YYYY-MM-DDTHH:mm:ss.SSZ'),
+      // dateAdded: moment(new Date()).format('YYYY-MM-DDTHH:mm:ss.SSZ'),
+      dateAdded: new Date(),
       // dateAdded: new Date().toLocaleDateString()
       //             + ' '
       //             + new Date().toLocaleTimeString(),
