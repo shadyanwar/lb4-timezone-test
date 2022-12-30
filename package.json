@@ -47,7 +47,7 @@
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
-    "@loopback/build": "^2.0.3",
+    "@loopback/build": "^9.0.6",
     "source-map-support": "^0.5.12",
     "@loopback/testlab": "^1.6.3",
     "@types/node": "^10.14.10",
